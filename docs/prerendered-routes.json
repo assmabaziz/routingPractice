@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/about",
+    "/card",
+    "/card/cardOne",
+    "/card/cardThree",
+    "/card/cardTwo",
+    "/contact",
+    "/home",
+    "/products"
+  ]
+}

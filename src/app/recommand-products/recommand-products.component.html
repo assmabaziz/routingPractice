@@ -1,0 +1,12 @@
+<div class="product grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+  @for (product of productList; track $index) {
+  <figure class="border-[1px] border-black rounded-md overflow-hidden">
+    <img [src]="product.imgSrc" class="w-full" alt="">
+    <figcaption class="text-center py-5">
+      <h2 class="font-semibold text-[18px] capitalize">price: {{product.price}}</h2>
+      <h2 class="font-semibold text-[18px] capitalize">category: {{product.category}}</h2>
+      <h2 class="font-semibold text-[18px] capitalize">on sale: {{product.onSale == true ? 'Yes': 'No'}}</h2>
+    </figcaption>
+  </figure>
+  }
+</div>

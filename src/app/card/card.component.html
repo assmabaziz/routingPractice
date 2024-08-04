@@ -1,0 +1,20 @@
+<div class=" bg-red-300 text-center p-20 border-[1px] border-red-900 rounded-md font-bold">
+  <h1>
+    Hello From card
+  </h1>
+</div>
+<div class="cards w-[75%] mx-auto py-10">
+  <div class="cards-content">
+    <ul class="flex gap-10 py-5">
+      <li><a  class="cursor-pointer font-semibold text-[18px]" routerLink="cardOne" routerLinkActive="bg-red-300 rounded-[25px] px-3 py-2 text-white">card one</a></li>
+      <li><a class="cursor-pointer font-semibold text-[18px]" routerLink="cardTwo" routerLinkActive="bg-red-300 rounded-[25px] px-3 py-2 text-white">card two</a></li>
+      <li><a class="cursor-pointer font-semibold text-[18px]" routerLink="cardThree" routerLinkActive="bg-red-300 rounded-[25px] px-3 py-2 text-white">card three</a></li>
+    </ul>
+  </div>
+  <!-- <app-card-one></app-card-one>
+  <app-card-two></app-card-two>
+  <app-card-three></app-card-three> -->
+  <router-outlet></router-outlet>
+
+
+</div>
