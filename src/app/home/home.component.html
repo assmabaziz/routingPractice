@@ -1,6 +1,36 @@
-<div class="bg-sky-300 text-center p-20 border-[1px] border-sky-900 rounded-md font-bold">
+<!-- <div class="bg-sky-300 text-center p-20 border-[1px] border-sky-900 rounded-md font-bold">
     <h1>
       Hello From Home
       </h1>
+</div> -->
+
+<div class="boxes py-10">
+  <div class="box grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <figure (click)="open('bg.jpg')">
+      <img src="./assets/images/bg.jpg" class="w-full "  alt="">
+    </figure>
+    <figure (click)="open('bg2.jpg')">
+      <img src="./assets/images/bg2.jpg" class="w-full" alt="">
+    </figure>
+    <figure (click)="open('bg6.jpg')">
+      <img src="./assets/images/bg6.jpg" class="w-full" alt="">
+    </figure>
+    <figure (click)="open('bgs.jpg')">
+      <img src="./assets/images/bgs.jpg" class="w-full" alt="">
+    </figure>
+    <figure (click)="open('bg6.jpg')">
+      <img src="./assets/images/bg6.jpg" class="w-full" alt="">
+    </figure>
+    <figure (click)="open('bg2.jpg')">
+      <img src="./assets/images/bg2.jpg" class="w-full" alt="">
+    </figure>
+  </div>
+  @if(check) {
+    <div class="overlay absolute top-0 left-0 right-0 bottom-[-100px] flex items-center justify-center bg-[#000] bg-opacity-30" (click)="close()">
+      <figure>
+        <img [src]="srcImg" class="w-1/2 mx-auto" alt="">
+      </figure>
+    </div>
+  }
 </div>
 

@@ -5,8 +5,17 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  check: boolean = false;
+  srcImg:string = ""
+  open(mainImg:string) {
+    this.check = true;
+    this.srcImg ="./assets/images/" + mainImg
 
+  }
+  close() {
+    this.check = false;
+  }
 }
