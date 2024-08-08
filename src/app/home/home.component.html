@@ -26,9 +26,9 @@
     </figure>
   </div>
   @if(check) {
-    <div class="overlay absolute top-0 left-0 right-0 bottom-[-100px] flex items-center justify-center bg-[#000] bg-opacity-30" (click)="close()">
+    <div class="overlay fixed top-0 left-0 right-0 bottom-[-100px] flex items-center justify-center bg-[#000] bg-opacity-30" (click)="close()">
       <figure>
-        <img [src]="srcImg" class="w-1/2 mx-auto" alt="">
+        <img [src]="srcImg" class="w-1/2 mx-auto" (click)="stopPropagation($event)" alt="">
       </figure>
     </div>
   }

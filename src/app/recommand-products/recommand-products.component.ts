@@ -1,27 +1,15 @@
 import { Component } from '@angular/core';
-interface IProducts {
-  name: string;
-  price: number;
-  onSale: boolean;
-  category: string;
-  imgSrc: string;
-  reviews: {
-    rating: number;
-    comment: string;
-    date: string;
-    reviewerName: string;
-    reviewerEmail: string;
-  }[];
-}
+import { IProduct } from '../iproduct';
+import { BoxProductComponent } from '../box-product/box-product.component';
 @Component({
   selector: 'app-recommand-products',
   standalone: true,
-  imports: [],
+  imports: [BoxProductComponent],
   templateUrl: './recommand-products.component.html',
   styleUrl: './recommand-products.component.css'
 })
 export class RecommandProductsComponent {
-  productList: IProducts[] = [
+  productList: IProduct[] = [
     {
       name: 'Grilled Salmon',
       price: 15.99,

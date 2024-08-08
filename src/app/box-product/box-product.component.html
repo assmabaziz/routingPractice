@@ -1,0 +1,17 @@
+ <figure class="border-[1px] border-black rounded-md overflow-hidden">
+  <img [src]="product.imgSrc" class="w-full" alt="">
+  <figcaption class="text-center py-5">
+    <h2 class="font-semibold text-[18px] capitalize">price: {{product.price}}</h2>
+    <h2 class="font-semibold text-[18px] capitalize">category: {{product.category}}</h2>
+    <h2 class="font-semibold text-[18px] capitalize">on sale: {{product.onSale == true ?  'Yes': 'No'}}</h2>
+    @for (review of product.reviews; track $index) {
+      <div class="comments bg-sky-100 bg-opacity-30 py-5 mt-5">
+        <h3 class="font-[800] text-[25px] capitalize">rating: {{review.rating}}</h3>
+        <h4>{{review.comment}}</h4>
+        <h5>{{review.reviewerName}}</h5>
+        <p>{{review.reviewerEmail}}</p>
+        <p >{{review.date}}</p>
+      </div>
+    }
+  </figcaption>
+</figure>

@@ -9,13 +9,15 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   check: boolean = false;
-  srcImg:string = ""
-  open(mainImg:string) {
+  srcImg: string = '';
+  open(mainImg: string) {
     this.check = true;
-    this.srcImg ="./assets/images/" + mainImg
-
+    this.srcImg = './assets/images/' + mainImg;
   }
   close() {
     this.check = false;
+  }
+  stopPropagation(event: any): void {
+    event.stopPropagation();
   }
 }
